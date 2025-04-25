@@ -19,7 +19,9 @@
 !*.vhdl
 !*.v
 !*.sv
-# IP core files
+# Platform Designer files
+!*.qsys 
+# IP core files 
 !*.qip
 !*.sip
 !*.bsf
