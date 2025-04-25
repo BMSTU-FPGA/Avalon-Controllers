@@ -1,0 +1,116 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 176 280 344 296)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLOCK_50" (rect 5 0 59 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 120 296 176 312))
+)
+(pin
+	(output)
+	(rect 168 320 344 336)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "LEDG[7..0]" (rect 5 0 59 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
+	)
+	(flipy)
+	(annotation_block (location)(rect 344 336 408 352))
+)
+(pin
+	(output)
+	(rect 168 360 344 376)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "LEDR[17..0]" (rect 5 0 62 12)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
+	)
+	(flipy)
+	(annotation_block (location)(rect 344 376 408 392))
+)
+(symbol
+	(rect 432 216 560 320)
+	(text "TEST_OY_CPU" (rect 17 -1 127 14)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 88 24 99)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 38 13)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 42 74)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 48 72))
+	)
+	(drawing
+		(text "clk" (rect 33 43 50 57)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 53 67 65 78)(font "Arial" (color 0 0 0)))
+		(text " TEST_OY_CPU " (rect 54 88 136 99)(font "Arial" ))
+		(line (pt 48 32)(pt 80 32))
+		(line (pt 80 32)(pt 80 88))
+		(line (pt 48 88)(pt 80 88))
+		(line (pt 48 32)(pt 48 88))
+		(line (pt 49 52)(pt 49 76))
+		(line (pt 50 52)(pt 50 76))
+		(line (pt 0 0)(pt 128 0))
+		(line (pt 128 0)(pt 128 104))
+		(line (pt 0 104)(pt 128 104))
+		(line (pt 0 0)(pt 0 104))
+	)
+)
+(connector
+	(pt 432 288)
+	(pt 344 288)
+)
+(connector
+	(pt 432 328)
+	(pt 344 328)
+	(bus)
+)
+(connector
+	(pt 432 368)
+	(pt 344 368)
+	(bus)
+)
