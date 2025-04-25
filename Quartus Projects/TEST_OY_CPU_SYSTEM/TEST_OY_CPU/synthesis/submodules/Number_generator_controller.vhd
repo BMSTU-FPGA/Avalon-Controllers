@@ -16,7 +16,7 @@ entity Number_generator_controller is
     );
 end entity Number_generator_controller;
 
-    architecture rtl of Number_generator_controller is
+architecture rtl of Number_generator_controller is
 	component number_generator_mult
 		port (
 			C : in std_logic;

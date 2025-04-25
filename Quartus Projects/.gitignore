@@ -1,15 +1,19 @@
 *.*
-!/*.gitignore
+!*.gitignore
 
 # ignore Quartus generated folders
-/db/
-/incremental_db/
-/simulation/*.vhd
-/simultaion/qsim/
-/timing/
-/testbench/
-/*_sim/
+*/db/
+*/incremental_db/
+*/simulation/*.vhd
+*/synthesis/
+*/simultaion/qsim/
+*/timing/
+*/testbench/
+*/*_sim/
+*~
 
+# README file
+!README*
 # project files
 !*.qpf
 !*.qsf
