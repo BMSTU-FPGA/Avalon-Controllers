@@ -20,7 +20,7 @@ architecture rtl of CI_NG is
 			Z : out std_logic_vector(9 downto 0)
 		);
 	end component;
-	signal int_resetn std_logic;
+	signal int_resetn: std_logic;
 begin
 	int_resetn <= not resetn;
 	unit_ng: number_generator
